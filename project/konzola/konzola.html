@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konzola</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/project/addons/styles.css">
+</head>
+<body>
+ <!-- navigacija -->
+ <div id="navbar"></div>
+
+  <!-- Glavni sadrzaj stranice -->
+  <div class="container mt-5">
+    <div id="unauthorized" class="d-none">
+      <h1>Nemate ovlasti za pristup ovoj stranici</h1>
+      <a href="/project/index.html" class="btn btn-primary">Vrati se na pocetnu stranicu</a>
+    </div>
+    <div id="adminConsole" class="d-none">
+      <h1>Konzola za Administratora</h1>
+      <div id="usersSection">
+        <h2>Uredivanje Korisnika</h2>
+        <table class="table" id="usersTable1">
+            <thead>
+                <th>Username</th>
+                <th>Ime</th>
+                <th>Prezime</th>
+                <th>email</th>
+                <th>Uloga</th>
+                <th>Opcije</th>
+              </thead>
+              <tbody id="usersTable">
+
+              </tbody>
+        </table>
+        
+        <a href="/project/konzola/add_user.html" class="btn btn-primary">Dodaj korisnika</a>
+      </div>
+      <div id="productsSection">
+        <h2>Uredivanje Proizvoda</h2>
+        <table class="table" id="productsTable1">
+            <thead>
+                <th>Naziv</th>
+                <th>Proizvodac</th>
+                <th>Cijena</th>
+                <th>opis</th>
+                <th>Opcije</th>
+              </thead>
+              <tbody class="productsTable">
+
+              </tbody>
+        </table>
+        <a href="/project/konzola/add_product.html" class="btn btn-primary">Dodaj proizvod</a>
+      </div>
+
+      <div>
+        <h2>Pregled narudzbi</h2>
+          <table class="table">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Datum narudzbe</th>
+                    <th>Status</th>
+                    <th>Metoda narudzbe</th>
+                    <th>Adresa</th>
+                    <th>Telefon</th>
+                    <th>Ukupna cijena</th>
+                </tr>
+            </thead>
+            <tbody id="narudzbeTable">
+                <!-- Narudzbe -->
+            </tbody>
+          </table>
+    </div>
+
+    </div>
+
+
+    <div id="modConsole" class="d-none">
+      <h1>Konzola za Moderatora</h1>
+      <div id="productsSection">
+        <h2>Uredivanje Proizvoda</h2>
+        <table class="table" id="productsTable1">
+            <thead>
+                <th>Naziv</th>
+                <th>Proizvodac</th>
+                <th>Cijena</th>
+                <th>opis</th>
+                <th>Opcije</th>
+              </thead>
+              <tbody class="productsTable">
+
+              </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
+  <script src="/project/konzola/konzola.js"></script>
+  
+</body>
+</html>

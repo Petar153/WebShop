@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crosair</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/project/addons/styles.css">
+</head>
+<body>
+
+  <!-- navigacija -->
+  <div id="navbar"></div>
+
+  <!-- Placeholder za modal kosarice -->
+ <div id="cartModalContainer"></div>
+
+ 
+  <section class="container mt-5">
+    <h2>O Crosairu</h2>
+    <p>Corsair se specijalizirao za proizvode vezane uz igranje i visokih performansi, a njihova linija tipkovnica cesto ukljucuje mehanicke modele s razlicitim tipovima prekidaca, 
+        sto omogucuje korisnicima da izaberu ono sto najbolje odgovara njihovim potrebama. 
+        Njihove tipkovnice su opremljene RGB osvjetljenjem koje se moze prilagoditi za stvaranje vizualno atraktivnog ambijenta tijekom igranja.
+         Corsair takoder nudi softver koji omogucava naprednu prilagodbu tipki i makroa, sto ih cini popularnim izborom medu igracima.</p>
+    <h3>SHOP</h3>
+    <!-- Proizvodi -->
+    <div class="row" id="proizvodiContainer">
+        <!-- Proizvodi ucitani -->
+      </div>
+  </section>
+
+ <!-- Placeholder za footer -->
+ <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/project/addons/script.js"></script>
+  <script src="/project/addons/ime.js"></script>
+  <script src="/project/proizvodaci/ucitaj_proizvode.js"></script>
+  <script src="/project/cart/cart.js"></script>
+  <script>ucitajCorsairProizvode()</script>  <!-- Nalazi se u ucitaj_proizvode.js -->
+</body>
+</html>

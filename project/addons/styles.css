@@ -1,0 +1,40 @@
+ /* Kartice imaju istu visinu */
+ .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 20px; /* Margina izmedu kartica */
+  
+}
+
+.card-body {
+  flex-grow: 1;
+  padding: 15px; 
+}
+
+/* Slike u karticama imaju istu visinu i sirinu */
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 200px; 
+}
+
+/* Marginna izmedu kartica */
+.card-deck .card {
+  margin-bottom: 20px;
+  
+}
+
+/* Razmak izmedu redova kartica */
+.row {
+  margin-bottom: 30px; 
+}
+
+/* Razmak izmedu slike i teksta */
+.card-body {
+  padding-top: 10px;
+}
+/* Razmak izmedu kolona */
+.row > .col-md-4 {
+  margin-bottom: 30px; 
+}

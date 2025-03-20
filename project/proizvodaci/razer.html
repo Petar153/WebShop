@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/project/addons/styles.css">
+</head>
+<body>
+
+  <!--   navigacija -->
+  <div id="navbar"></div>
+
+  <!-- Placeholder za modal kosarice -->
+ <div id="cartModalContainer"></div>
+
+ 
+  <section class="container mt-5">
+    <h2>O Razeru</h2>
+    <p>Razer je poznat kao jedan od najprepoznatljivijih brendova u gaming industriji, s naglaskom na dizajn i inovaciju. 
+        Njihove tipkovnice koriste vlastite mehanicke prekidace, kao sto su Razer Green, Orange i Yellow, koji su optimizirani za razlicite stilove igranja.
+        Osim visoke kvalitete izrade, Razer tipkovnice nude napredne znacajke poput prilagodljivog RGB osvjetljenja, podrske za makro komande i specijaliziranog softvera za personalizaciju, 
+        sto ih cini omiljenim izborom medu profesionalnim igracima.</p>
+    <h3>SHOP</h3>
+    
+         <!-- Proizvodi -->
+    <div class="row" id="proizvodiContainer">
+        <!-- Proizvodi ucitani  -->
+      </div>
+
+  </section>
+
+ <!-- Placeholder za footer -->
+ <div id="footer"></div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/project/addons/script.js"></script>
+  <script src="/project/addons/ime.js"></script>
+  <script src="/project/proizvodaci/ucitaj_proizvode.js"></script>
+  <script src="/project/cart/cart.js"></script>
+  <script>ucitajRazerProizvode()</script> <!-- Nalazi se u ucitaj_proizvode.js -->
+</body>
+</html>

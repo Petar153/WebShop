@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registracija</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/project/addons/styles.css">
+</head>
+<body class="d-flex align-items-center min-vh-100 bg-light">
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Registracija</h3>
+          <form action="register.php" method="post">
+            <div class="form-group">
+              <label for="ime">Ime</label>
+              <input type="text" class="form-control" id="ime" name="ime" required>
+            </div>
+            <div class="form-group">
+              <label for="Prezime">Prezime</label>
+              <input type="text" class="form-control" id="prezime" name="prezime" required>
+            </div>
+            <div class="form-group">
+              <label for="username">Korisnicko ime</label>
+              <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="lozinka">Lozinka</label>
+              <input type="password" class="form-control" id="lozinka" name="lozinka" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Potvrdi</button>
+                <button type="button" class="btn btn-secondary" onclick="openIndex()">Zatvori</button>
+              
+              <a href="login.html" class="btn btn-link">Login</a>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+<script>
+  function openIndex() {
+      window.location.href = '/project/index.html'; 
+  }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

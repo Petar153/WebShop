@@ -1,0 +1,36 @@
+<!-- Modal za kosaricu -->
+<div class="modal fade" id="cartModal" tabindex="-1" uloga="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" uloga="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Kosarica</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Zatvori">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Proizvod</th>
+              <th>Kolicina</th>
+              <th>Cijena</th>
+              <th>Ukupno</th>
+              <th>Akcije</th>
+            </tr>
+          </thead>
+          <tbody id="cartItems">
+            <!-- Proizvodi -->
+          </tbody>
+        </table> 
+        <div class="text-right">
+          <h4>Ukupno: <span id="cartTotal">0.00 EUR</span></h4>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zatvori</button>
+        <button type="button" class="btn btn-primary" id="checkoutButton" onclick="window.open('/project/cart/final.html')">Kupi</button>
+      </div>
+    </div>
+  </div>
+</div>
