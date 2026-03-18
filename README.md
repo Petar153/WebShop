@@ -27,11 +27,11 @@ Sustav podržava tri vrste korisnika, od kojih svaka ima različite ovlasti:
   - Pregled proizvoda
 
 - **Moderator**
-  - Dodavanje novih proizvoda
+  - Dodavanje novih proizvoda, uređivanje i brisanje postojećih
 
 - **Admin**
-  - Dodavanje novih korisnika
-  - Dodavanje novih proizvoda
+  - Dodavanje novih korisnika, uređivanje i brisanje postojećih
+  - Dodavanje novih proizvoda, uređivanje i brisanje postojećih
 
 ---
 
