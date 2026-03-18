@@ -46,9 +46,9 @@ Sustav podržava tri vrste korisnika, od kojih svaka ima različite ovlasti:
 ---
 
 ### 2. Postavljanje projekta
-1. Otići u XAMPP instalacijsku mapu (npr. `C:\xampp`)
-2. Otvoriti mapu `htdocs`
-3. Kopirati folder **project** u `htdocs`
+1. Otići u XAMPP instalacijsku mapu (npr. C:\xampp)
+2. Otvoriti mapu htdocs
+3. Kopirati folder **project** u htdocs
 
 Struktura treba izgledati ovako:
 C:\xampp\htdocs\project
